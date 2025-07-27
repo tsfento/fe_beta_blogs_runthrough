@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   selector: 'app-login',
   imports: [ReactiveFormsModule],
   templateUrl: './login.component.html',
-  styleUrl: './login.component.scss'
+  styleUrl: '../shared.styles.scss'
 })
 export class LoginComponent {
   loginForm: FormGroup = new FormGroup({

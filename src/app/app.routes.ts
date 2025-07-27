@@ -15,6 +15,11 @@ export const routes: Routes = [
     canActivate: [noAuthGuard],
   },
   {
+    path: 'signup',
+    loadComponent: () => import('./features/auth/signup/signup.component').then((c) => c.SignupComponent),
+    canActivate: [noAuthGuard],
+  },
+  {
     path: 'blogs/new',
     loadComponent: () => import('./features/blogs/blogs-new/blogs-new.component').then((c) => c.BlogsNewComponent),
     canActivate: [authGuard],

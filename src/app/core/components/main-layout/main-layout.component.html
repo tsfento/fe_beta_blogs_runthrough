@@ -9,15 +9,11 @@
         >Home</a
       >
       @if (authService.isLoggedIn()) {
-      <a
-        routerLink="/blogs/new"
-        routerLinkActive="active"
-        [routerLinkActiveOptions]="{ exact: true }"
-        >Create Blog</a
-      >
+      <a routerLink="/blogs/new" routerLinkActive="active">Create Blog</a>
       <a (click)="logout()">Logout</a>
       } @else {
       <a routerLink="/login">Login</a>
+      <a routerLink="/signup">Sign Up</a>
       }
     </nav>
   </div>

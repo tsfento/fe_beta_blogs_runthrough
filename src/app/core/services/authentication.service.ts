@@ -37,4 +37,8 @@ export class AuthenticationService {
     this.tokenSubject.next(null);
     this.router.navigate(['/login']);
   }
+
+  signup(data: any) {
+    return this.http.post(`${environment.apiUrl}/users`, data);
+  }
 }
