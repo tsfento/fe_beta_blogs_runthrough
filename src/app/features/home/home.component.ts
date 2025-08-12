@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { BlogService } from '../../core/services/blog.service';
 import { BlogListComponent } from '../../shared/blogs/blog-list/blog-list.component';
 import { Blog } from '../../shared/models/blog';

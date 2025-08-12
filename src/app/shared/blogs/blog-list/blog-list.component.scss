@@ -6,7 +6,6 @@
   align-items: flex-start;
 }
 
-
 .blog-preview-container {
   display: flex;
   justify-content: space-between;
@@ -39,4 +38,8 @@
   object-fit: cover;
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
+}
+
+mat-icon {
+  cursor: pointer;
 }
